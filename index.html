@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>GTA Ukraine Online</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+</head>
+<body>
+    <div id="auth">
+        <h2>Вхід у GTA UA</h2>
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="pass" placeholder="Пароль">
+        <button onclick="login()">Увійти</button>
+        <button onclick="register()">Реєстрація</button>
+    </div>
+
+    <div id="ui" style="display:none;">
+        <div class="money">₴ <span id="cash">2500</span></div>
+        <div class="chat" id="chat"></div>
+        <input type="text" id="msg" placeholder="Чат...">
+        <canvas id="screen"></canvas>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
